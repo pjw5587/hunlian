@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>首页 - XX市婚恋服务中心</title>
+<meta name="description" content="婚恋信息服务平台：实名登记、资料审核、信息脱敏展示，为单身人士提供规范的婚恋信息服务。" />
+<meta name="keywords" content="婚恋服务,实名登记,相亲交友,会员信息" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5/700.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+
+<div id="site-topbar"></div>
+<div id="site-header"></div>
+
+<main id="main" class="wrap">
+
+  <!-- 首屏：焦点区 + 通知公告 -->
+  <div class="home-top">
+    <section class="banner" aria-label="平台介绍">
+      <h2>以诚相待　遇见对的人</h2>
+      <p>实名登记 · 材料审核 · 信息脱敏展示，让每一次相识都建立在真实与尊重之上。</p>
+      <div class="banner-tags">
+        <span>实名登记 资料核验</span>
+        <span>资料人工审核</span>
+        <span>联系方式仅审核人员可见</span>
+      </div>
+      <div class="banner-actions">
+        <a class="btn" href="register.html">我要登记报名</a>
+        <a class="btn btn-outline" href="members.html?gender=all">浏览会员信息</a>
+      </div>
+    </section>
+
+    <section class="notice-panel" aria-label="通知公告">
+      <div class="section-head">
+        <h2>通知公告</h2>
+        <a class="more" href="notice.html">更多 &gt;</a>
+      </div>
+      <ul class="notice-list" id="home-notices">
+        <li><div class="loading"><div class="spinner"></div>公告加载中…</div></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- 快捷服务 -->
+  <section class="section" aria-label="快捷服务">
+    <div class="section-head"><h2>快捷服务</h2><span class="more">按需办理，一次办成</span></div>
+    <div class="section-body tight">
+      <div class="quick-grid">
+        <a class="quick-item" href="register.html">
+          <div class="qi-icon">登</div>
+          <strong>登记报名</strong>
+          <span>在线提交个人资料</span>
+        </a>
+        <a class="quick-item" href="members.html?gender=male">
+          <div class="qi-icon">男</div>
+          <strong>男嘉宾信息</strong>
+          <span>浏览男士会员资料</span>
+        </a>
+        <a class="quick-item" href="members.html?gender=female">
+          <div class="qi-icon">女</div>
+          <strong>女嘉宾信息</strong>
+          <span>浏览女士会员资料</span>
+        </a>
+        <a class="quick-item" href="guide.html">
+          <div class="qi-icon">询</div>
+          <strong>服务指南</strong>
+          <span>流程 · 材料 · 常见问题</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据统计 -->
+  <section class="section" aria-label="服务数据">
+    <div class="section-head"><h2>服务数据</h2><span class="more">数据来源：平台已通过审核会员</span></div>
+    <div class="section-body">
+      <div class="stat-row">
+        <div class="stat-card"><b id="stat-total">—</b><span>已通过审核会员（人）</span></div>
+        <div class="stat-card male"><b id="stat-male">—</b><span>男嘉宾（人）</span></div>
+        <div class="stat-card female"><b id="stat-female">—</b><span>女嘉宾（人）</span></div>
+        <div class="stat-card pending"><b id="stat-days">3</b><span>资料审核时限（工作日）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 办理流程 -->
+  <section class="section" aria-label="办理流程">
+    <div class="section-head"><h2>办理流程</h2><span class="more">线下窗口与线上办理一致</span></div>
+    <div class="section-body">
+      <div class="steps">
+        <div class="step"><div class="num">1</div><strong>在线登记</strong><p>填写个人资料与择偶要求</p></div>
+        <div class="step"><div class="num">2</div><strong>资料审核</strong><p>3个工作日内完成核验</p></div>
+        <div class="step"><div class="num">3</div><strong>信息展示</strong><p>脱敏后在平台公开展示</p></div>
+        <div class="step"><div class="num">4</div><strong>意向沟通</strong><p>致电窗口协助双方联系</p></div>
+        <div class="step"><div class="num">5</div><strong>线下活动</strong><p>参加相亲会、联谊活动</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 两栏：政策法规提示 + 侧栏 -->
+  <div class="layout-2col">
+    <section class="section" aria-label="政策法规与温馨提示">
+      <div class="section-head"><h2>政策法规与温馨提示</h2><span class="more">依法依规提供服务</span></div>
+      <div class="section-body">
+        <ul class="link-list">
+          <li><a href="about.html#privacy">《中华人民共和国个人信息保护法》与本站信息处理说明</a></li>
+          <li><a href="about.html#privacy">《中华人民共和国民法典》婚姻家庭编相关要点</a></li>
+          <li><a href="guide.html#notice">会员资料填写规范（避免审核不通过）</a></li>
+          <li><a href="notice.html">防骗提示：警惕以婚恋名义的诈骗行为</a></li>
+          <li><a href="about.html">市婚恋服务中心服务承诺与投诉渠道</a></li>
+        </ul>
+        <div class="alert alert-info" style="margin-top:16px">
+          本站会员资料均经工作人员核验后脱敏展示，<strong>真实姓名与完整手机号不对外公开</strong>；
+          工作人员不会以任何理由索取银行卡号、短信验证码或要求转账。
+          如遇冒用本站名义的可疑情况，请立即致电 <strong>0000-00000000</strong> 核实。
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div class="side-card">
+        <div class="side-head">咨询与办理</div>
+        <div class="side-body side-contact">
+          <p>服务热线：<b>0000-00000000</b></p>
+          <p>现场办理：市政务服务中心 3 楼 306 室</p>
+          <p>办理时间：周一至周五 9:00-17:00</p>
+          <p>现场受理：每周二、周四全天</p>
+          <a class="btn btn-ghost btn-sm" style="margin-top:8px" href="guide.html">查看服务指南</a>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="side-head">会员登录与后台</div>
+        <div class="side-body side-contact">
+          <p>会员资料提交后由工作人员审核，无需注册账号。</p>
+          <p>工作人员请点击下方入口登录后台查看与审核资料。</p>
+          <a class="btn btn-sm" style="margin-top:8px" href="admin.html">工作人员登录</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
