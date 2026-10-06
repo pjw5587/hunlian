@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>登记报名 - 千缘婚恋服务中心</title>
+<meta name="description" content="在线登记个人婚恋信息：基本信息、婚况、居住情况、联系方式和择偶要求，提交后由工作人员审核。" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5/700.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+
+<div id="site-topbar"></div>
+<div id="site-header"></div>
+
+<div class="crumb"><div class="wrap">
+  <a href="index.html">首页</a> &gt; <span>登记报名</span>
+</div></div>
+
+<div class="page-head"><div class="wrap">
+  <h1>会员登记报名</h1>
+  <p>请如实填写以下信息。<b>带 <span style="color:#c0272d">*</span> 为必填项</b>；真实姓名与手机号仅工作人员可见，公开展示时一律脱敏。</p>
+</div></div>
+
+<main id="main" class="wrap" style="margin-top:20px">
+  <div class="layout-2col">
+    <div>
+      <form class="form-card" id="reg-form" onsubmit="return false">
+        <h3 class="form-section-title">一、基本信息</h3>
+        <div class="form-grid">
+          <div class="form-item">
+            <label>性别<span class="req">*</span></label>
+            <div class="radio-line">
+              <label><input type="radio" name="gender" value="male" /> 男</label>
+              <label><input type="radio" name="gender" value="female" /> 女</label>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="rx-name">真实姓名<span class="req">*</span></label>
+            <input type="text" id="rx-name" maxlength="20" placeholder="用于资料核验，不对外公开" />
+            <span class="hint">仅工作人员可见，公开展示时使用下方“公开称呼”。</span>
+          </div>
+          <div class="form-item">
+            <label for="rx-display">公开称呼<span class="req">*</span></label>
+            <input type="text" id="rx-display" maxlength="20" placeholder="如：王先生 / 李女士" />
+            <span class="hint">公开展示时使用的称呼，请勿填写全名。</span>
+          </div>
+          <div class="form-item">
+            <label for="rx-year">出生年份<span class="req">*</span></label>
+            <input type="number" id="rx-year" min="1950" max="2010" placeholder="如：1993" />
+          </div>
+          <div class="form-item">
+            <label for="rx-height">身高（cm）<span class="req">*</span></label>
+            <input type="number" id="rx-height" min="140" max="210" placeholder="如：170" />
+          </div>
+          <div class="form-item">
+            <label for="rx-weight">体重（kg）</label>
+            <input type="number" id="rx-weight" min="35" max="150" placeholder="选填" />
+          </div>
+          <div class="form-item">
+            <label for="rx-edu">学历<span class="req">*</span></label>
+            <select id="rx-edu">
+              <option value="">请选择</option>
+              <option>中专及以下</option>
+              <option>大专</option>
+              <option>本科</option>
+              <option>硕士</option>
+              <option>博士</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="rx-job">职业<span class="req">*</span></label>
+            <input type="text" id="rx-job" maxlength="30" placeholder="如：中学教师 / 软件工程师" />
+          </div>
+          <div class="form-item">
+            <label for="rx-income">收入范围</label>
+            <select id="rx-income">
+              <option value="">不便透露</option>
+              <option>5万以下 / 年</option>
+              <option>5-10万 / 年</option>
+              <option>10-20万 / 年</option>
+              <option>20-50万 / 年</option>
+              <option>50万以上 / 年</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 class="form-section-title">二、婚况与居住情况</h3>
+        <div class="form-grid">
+          <div class="form-item">
+            <label for="rx-marital">婚姻状况<span class="req">*</span></label>
+            <select id="rx-marital">
+              <option value="">请选择</option>
+              <option>未婚</option>
+              <option>离异</option>
+              <option>丧偶</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="rx-children">子女情况</label>
+            <select id="rx-children">
+              <option value="">请选择</option>
+              <option>无子女</option>
+              <option>有子女，随本人生活</option>
+              <option>有子女，不随本人生活</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="rx-city">现居城市<span class="req">*</span></label>
+            <input type="text" id="rx-city" maxlength="20" placeholder="如：本市" />
+          </div>
+          <div class="form-item">
+            <label for="rx-district">区县 / 片区</label>
+            <input type="text" id="rx-district" maxlength="20" placeholder="如：高新区（选填）" />
+          </div>
+          <div class="form-item">
+            <label for="rx-hukou">户口所在地</label>
+            <input type="text" id="rx-hukou" maxlength="30" placeholder="选填" />
+          </div>
+          <div class="form-item">
+            <label for="rx-housing">住房情况</label>
+            <select id="rx-housing">
+              <option value="">请选择</option>
+              <option>有房</option>
+              <option>无房</option>
+              <option>与父母同住</option>
+              <option>租房</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="rx-car">车辆情况</label>
+            <select id="rx-car">
+              <option value="">请选择</option>
+              <option>有车</option>
+              <option>无车</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 class="form-section-title">三、联系方式（仅工作人员可见）</h3>
+        <div class="form-grid">
+          <div class="form-item">
+            <label for="rx-phone">手机号<span class="req">*</span></label>
+            <input type="tel" id="rx-phone" maxlength="11" placeholder="11位手机号，用于资料核验与联系" />
+            <span class="hint">公开展示时显示为 138****0000 形式。</span>
+          </div>
+          <div class="form-item">
+            <label for="rx-wechat">微信号</label>
+            <input type="text" id="rx-wechat" maxlength="30" placeholder="选填，仅工作人员可见" />
+          </div>
+        </div>
+
+        <h3 class="form-section-title">四、自我介绍与择偶要求</h3>
+        <div class="form-grid">
+          <div class="form-item full">
+            <label for="rx-self">自我介绍<span class="req">*</span></label>
+            <textarea id="rx-self" maxlength="500" placeholder="不少于30字：性格、兴趣爱好、工作生活节奏、家庭情况等"></textarea>
+          </div>
+          <div class="form-item full">
+            <label for="rx-mate">择偶要求<span class="req">*</span></label>
+            <textarea id="rx-mate" maxlength="500" placeholder="不少于20字：年龄范围、身高、学历、性格、地域等要求"></textarea>
+          </div>
+        </div>
+
+        <h3 class="form-section-title">五、近期照片（选填，建议上传）</h3>
+        <div class="form-item">
+          <input type="file" id="rx-photo" accept="image/*" />
+          <span class="hint">建议上传近期清晰生活照，单张不超过 5MB；未上传将使用默认头像展示。</span>
+          <img id="rx-photo-preview" alt="照片预览" style="display:none;max-width:180px;margin-top:12px;border:1px solid #dbe2ea" />
+        </div>
+
+        <h3 class="form-section-title">六、信息真实性与展示授权</h3>
+        <label class="check-line">
+          <input type="checkbox" id="rx-agree" />
+          <span>本人承诺所填信息真实有效，并同意平台在<b>脱敏处理</b>后（不展示真实姓名、完整手机号、微信号）用于婚恋信息服务展示；
+            同意工作人员在必要时通过电话核验资料。本人已知悉所填资料须真实有效，并同意经审核后脱敏展示。</span>
+        </label>
+
+        <div class="form-actions">
+          <button type="button" class="btn" id="rx-submit">提交登记资料</button>
+          <button type="reset" class="btn btn-ghost">重置表单</button>
+          <span class="form-tip">提交后将在 3 个工作日内完成审核，请保持电话畅通。</span>
+        </div>
+      </form>
+    </div>
+
+    <aside>
+      <div class="side-card">
+        <div class="side-head">填写须知</div>
+        <div class="side-body side-contact">
+          <p>1. 请如实填写，虚假信息将被驳回并可能取消服务资格。</p>
+          <p>2. 手机号仅用于资料核验与联系，公开展示时脱敏。</p>
+          <p>3. 照片请使用本人近期生活照，请勿使用他人照片。</p>
+          <p>4. 审核不通过时，工作人员会电话说明原因。</p>
+        </div>
+      </div>
+      <div class="side-card">
+        <div class="side-head">个人信息保护</div>
+        <div class="side-body side-contact">
+          <p>本站依据《中华人民共和国个人信息保护法》处理会员信息：</p>
+          <p>· 仅收集服务所必需的信息；</p>
+          <p>· 真实姓名、手机号、微信号仅审核人员可见；</p>
+          <p>· 可随时致电 <b>0000-00000000</b> 申请更正或删除本人信息。</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
